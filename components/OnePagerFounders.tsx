@@ -30,8 +30,10 @@ const Founder = ({ person }: { person: OnePagerPerson }) => {
       <Avatar marginRight='10px'></Avatar>
       <Box>
         <Box key={person.name} d='inline-flex' alignItems='baseline'>
-          <Heading as='h2' size='md' marginRight='10px' marginBottom='0'>
+        <Heading as='h2' size='md' marginRight='10px'>
+          <a href={person.LinkedIn} target='_blank'>
             {person.name}
+          </a>
           </Heading>
           <Heading
             as='h2'

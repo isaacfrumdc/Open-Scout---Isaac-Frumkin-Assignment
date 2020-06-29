@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading } from '@chakra-ui/core';
+import { Heading, Progress} from '@chakra-ui/core';
 
 import { OnePagerData } from '../model/model';
 import { ContentCard } from './ContentCard';
@@ -17,7 +17,11 @@ export const OnePagerFinances = ({
   // Format a number to include a dollar sign. This function
   // will be improved as part of task 2.
   const formatFinanceNumber = (financeNumber: number) => {
-    return `$${financeNumber}`;
+    //numberFormat(financeNumber);
+    //numberWithCommas(financeNumber);
+    var nf = new Intl.NumberFormat();
+    //const x = parseFloat(nf.format(financeNumber)).toLocaleString('en');
+    return `$${nf.format(financeNumber).toLocaleString()}`;
   };
 
   return (
@@ -31,9 +35,17 @@ export const OnePagerFinances = ({
       <SubHeading>
         Funding Goal: {formatFinanceNumber(onePagerData.fundraisingStageGoal)}
       </SubHeading>
+      <SubHeading>
+        Fundraising Details: {onePagerData.fundraisingDetails}
+      </SubHeading>
+      <Progress 
+        hasStripe isAnimated
+        max={onePagerData.fundraisingStageGoal} value={onePagerData.fundsRaisedInStage} 
+      />
     </ContentCard>
   );
 };
+
 
 /** Renders smaller heading. */
 const SubHeading = ({ children }) => (
@@ -41,3 +53,9 @@ const SubHeading = ({ children }) => (
     {children}
   </Heading>
 );
+/*
+function numberWithCommas(x) {
+  var buf = Buffer.from(x)
+  return console.log(buf.toString).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+*/

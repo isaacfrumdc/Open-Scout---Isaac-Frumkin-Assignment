@@ -10,12 +10,14 @@ export const facebook2: OnePagerPerson = {
   name: 'Dustin Moskovitz',
   title: 'CTO',
   description: 'Co-founder of Asana',
+  LinkedIn: 'https://www.linkedin.com/in/dmoskov/',
 };
 
 export const facebook3: OnePagerPerson = {
   name: 'Eduardo Saverin',
   title: 'CFO',
   description: 'Founder of B Capital',
+  LinkedIn: 'https://www.linkedin.com/in/markpincus/',
 };
 
 export const zynga1: OnePagerPerson = {
@@ -29,12 +31,14 @@ export const zynga2: OnePagerPerson = {
   name: 'Eric Schiermeyer',
   title: 'SVP of Product',
   description: 'Founder of Luminary (game company)',
+  LinkedIn: 'https://www.linkedin.com/in/ericschiermeyer/',
 };
 
 export const zynga3: OnePagerPerson = {
   name: 'Michael Luxton',
   title: 'CTO',
   description: 'Previously worked for eUniverse and Network Appliance',
+  LinkedIn: 'https://www.linkedin.com/in/michael-luxton-80a532/',
 };
 
 export const lendingClub1: OnePagerPerson = {
@@ -42,12 +46,14 @@ export const lendingClub1: OnePagerPerson = {
   title: 'CEO',
   description:
     'Previously cofounded and led TripleHop Technologies, a software company',
+  LinkedIn: 'https://www.linkedin.com/in/renaudlaplanche/',
 };
 
 export const lendingClub2: OnePagerPerson = {
   name: 'John Donovan',
   title: 'COO',
   description: 'Previously VP of Global Product Development at Mastercard',
+  LinkedIn: 'https://www.linkedin.com/in/jgdonovan/',
 };
 
 export const workday1: OnePagerPerson = {
@@ -55,6 +61,7 @@ export const workday1: OnePagerPerson = {
   title: 'CEO',
   description:
     'Partner at Greylock Partners and former vice chairman of ERP company PeopleSoft',
+  LinkedIn: 'https://www.linkedin.com/in/aneelbhusri/',
 };
 
 export const workday2: OnePagerPerson = {
@@ -76,4 +83,5 @@ export const spotify2: OnePagerPerson = {
   title: 'Chairman',
   description:
     'Previously founded online Advertigo (advertising company) and former CEO of uTorrent',
+  LinkedIn: 'https://www.linkedin.com/in/daniel-ek-1b52093a/',
 };

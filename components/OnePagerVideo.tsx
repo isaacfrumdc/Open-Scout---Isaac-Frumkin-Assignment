@@ -13,13 +13,18 @@ export const OnePagerVideo = ({
   onePagerData,
   isLoading,
 }: OnePagerVideoProps) => {
-  return (
-    <ContentCard title='Pitch Video' isLoading={isLoading}>
-      <Heading as='h2' size='md' marginRight='10px'>
-        <a href={onePagerData.pitchVideoLink} target='_blank'>
-          Link to Pitch Video
-        </a>
-      </Heading>
-    </ContentCard>
-  );
+  const isLink = onePagerData.pitchVideoLink;
+  if (!isLink) {
+    return null
+  } else {
+    return (
+      <ContentCard title='Pitch Video' isLoading={isLoading}>
+        <Heading as='h2' size='md' marginRight='10px'>
+          <a href={onePagerData.pitchVideoLink} target='_blank'>
+            Link to Pitch Video
+          </a>
+        </Heading>
+      </ContentCard>
+    );
+  }
 };
